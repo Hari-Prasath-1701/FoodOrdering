@@ -1,0 +1,203 @@
+<html>
+<head>
+    <title>Food Ordering</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <script type = "text/javascript" src = "align.js"></script>
+</head>
+
+   
+<body>
+<span style="margin-left: 120px;"></span>
+<div class="ui vertical menu" style="position: absolute;top: 50px;left: 40px;">
+  <div class="item">
+    <i class="right floated bell icon"></i>
+    <br>
+  </div>
+  <div class="item">
+    <h2>Hello Maceij !</h2>
+
+    <button class="ui green button">Create New Meals <h3>+</h3>
+</button>
+    </div>
+  <div class="header">
+    <b>Menu</b>
+  </div>
+  <a class="item">
+    overview<i class="globe icon"></i> 
+  </a>
+  <a class="item">
+    Meals<i class="grid layout icon"></i> 
+  </a>
+  <a class="item">
+    User Account<i class="meh icon"></i> 
+  </a>
+  <a class="item">
+    Calendar<i class="calendar alternate outline icon"></i> 
+  </a>
+  <br><br><br>
+  <a class="item">
+   Logout <i class="sign-out alternate icon"></i> 
+  </a>
+
+</div>
+<br>
+<div class="ui category search item" style="position:relative;left:400px;max-width:2000px;">
+   <i class="search link icon"></i>
+    <div class="ui transparent icon input">
+
+      <input class="prompt" type="text" placeholder="Search">
+      <span style="margin-left: 120px;"></span>
+         <div class="ui toggle checkbox">
+           <input type="checkbox" name="public" checked="">
+           <label>Meat</label>
+         </div>
+<span style="margin-left: 40px;"></span>
+         <div class="ui toggle checkbox">
+           <input type="checkbox" name="public" checked="">
+           <label>Vegan</label>
+         </div>
+    </div>
+<span style="margin-left: 40px;"></span>
+         <div class="ui toggle checkbox">
+           <input type="checkbox" name="public" >
+           <label>Given Free</label>
+         </div>
+    </div>
+
+
+<div class="ui secondary pointing menu" style="position: absolute;left: 400px;max-width: 600px;">
+     <a class=" item aall" id="all" >  All Cuisines </a>
+     <a class="item aind" id="ind" > Indian </a>
+     <a class="item athai" id="thai"> Thai </a>
+     <a class="item aitl" id="itl"> Italian </a>
+     <a class="item agreek" id="greek"> Greek </a>
+     <a class="item achi" id="chi"> Chinese </a>
+           <span style="margin-left: 40px;"></span>
+      <div class="ui right simple dropdown ">
+            <div class="text">Sort By</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+               <div class="item">Price</div>
+               <div class="item">Rating</div>
+            </div>
+       </div>
+</div>
+<br><br><br>
+<div class="ui segment" style="overflow: scroll;height: 540px;max-width: 600px;position: absolute;left:400px;bottom: 30px;">
+   
+   
+   <div class="ui container all" >
+      <Dosai_component> </Dosai_component>
+      <Chickenbiriyani_component> </Chickenbiriyani_component>
+      <Meals_component> </Meals_component>
+      <Naan_component> </Naan_component>
+      <Thali_component> </Thali_component>
+      <Dimsum_component></Dimsum_component>
+      <Springroll_component></Springroll_component>
+      <Szechawn_component></Szechawn_component>
+      <Shitake_component></Shitake_component>
+      <Risotto_component></Risotto_component>
+      <Tiramisu_component></Tiramisu_component>
+      <Frocaccia_component></Frocaccia_component>
+      <Bruschetta_component></Bruschetta_component>
+      <Caprese_component></Caprese_component>
+      <Grilled_component></Grilled_component>
+      <Olive_component></Olive_component>
+      <Taramasalata_component></Taramasalata_component>
+      <Moussaka_component></Moussaka_component>
+      <Khao_component></Khao_component>
+      <Gang_component></Gang_component>
+      <Pad_component></Pad_component>
+      <Tom_component></Tom_component>
+   </div>
+
+   <div class="ui container india" id="india">
+      <Dosai_component>              </Dosai_component>
+      <Chickenbiriyani_component>    </Chickenbiriyani_component>
+      <Meals_component>              </Meals_component>
+      <Naan_component>               </Naan_component>
+      <Thali_component>               </Thali_component>
+   </div>
+   
+   <div class="ui container china" >
+      <Dimsum_component></Dimsum_component>
+      <Springroll_component></Springroll_component>
+      <Szechawn_component></Szechawn_component>
+      <Shitake_component></Shitake_component>
+   </div>
+
+   <div class="ui container thai" >
+      <Khao_component></Khao_component>
+      <Gang_component></Gang_component>
+      <Pad_component></Pad_component>
+      <Tom_component></Tom_component>
+   </div>
+
+   <div class="ui container greek" >
+      <Grilled_component></Grilled_component>
+      <Olive_component></Olive_component>
+      <Taramasalata_component></Taramasalata_component>
+      <Moussaka_component></Moussaka_component>
+   </div>
+
+   <div class="ui container italy" >
+      <Risotto_component></Risotto_component>
+      <Tiramisu_component></Tiramisu_component>
+      <Frocaccia_component></Frocaccia_component>
+      <Bruschetta_component></Bruschetta_component>
+      <Caprese_component></Caprese_component>
+   </div>
+
+</div>
+
+<div class="ui vertical menu" style="position: fixed;bottom: 20px;left:1130px;">
+  <div class="item">
+    <div class="header"><h1>Create Your Meals plan</h1></div>
+    <label for="birthday">For:</label>
+<input type="date" id="birthday" name="birthday">
+    <div class="menu">
+      <a class="item">Breakfast</a>
+      <div class="ui container s1" >
+      <Khao_component></Khao_component>
+      <Olive_component></Olive_component>
+    </div>
+    <div class="menu">
+      <a class="item">Lunch</a>
+      <div class="ui container s2" >
+      <Caprese_component></Caprese_component>
+    </div>
+    </div>
+
+    <div class="menu">
+      <a class="item">Dinner</a>
+      <div class="ui container all" >
+      <Szechawn_component></Szechawn_component>
+    </div>
+    </div>
+<br>
+    <button class="ui green button">Save Meals & Pay <h3>$ 14.4</h3>
+</button>
+<div class="ui cards">
+  <div class="card">
+    <div class="content">
+      <i class="right floated edit icon"></i>
+      <div class="meta">
+        Payment
+      </div>
+      <div class="header">
+        Master Card **** 3092
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+
+      
+      
+<script type = "text/javascript" src = "item_component.js"></script>
+</body>
+</html>
